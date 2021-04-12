@@ -26,7 +26,7 @@ resource "tencentcloud_instance" "web" {
   internet_max_bandwidth_out = 10
   key_name                   =  "skey-9m4q4kl5"
   security_groups            = [tencentcloud_security_group.default.id]
-  count                      = 0
+  count                      = 1
   hostname                   = "cvm-{R:01}.sftcwl.com"
   user_data                  = "IyEvYmluL2Jhc2ggCmVjaG8gYGRhdGVgID4gL3RtcC90YWc="
 
